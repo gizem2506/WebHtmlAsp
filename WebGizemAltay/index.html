@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>GASS- Gizem Altay Spor Salonu</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    
+    <link href="img/favicon.ico" rel="icon">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">GASS</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link active">Anasayfa</a>
+                    <a href="about.html" class="nav-item nav-link">Hakkında</a>
+                    <a href="service.html" class="nav-item nav-link">Spor Hareketleri</a>
+                    <a href="class.html" class="nav-item nav-link">Sınıflar</a>
+                    <a href="team.html" class="nav-item nav-link">Eğitmenler</a>
+                    <a href="contact.html" class="nav-item nav-link">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .kayitol-form {
+            position: relative;
+            text-align: center;
+        }
+
+        .kayitol-form1 {
+            position: absolute;
+            top: 100%;
+        }
+
+        .kayitol-form2 {
+            position: absolute;
+            top: 100%;
+            left: 60%;
+        }
+
+        .kayitol-form1 form input {
+            width: 280px;
+            margin-top: 2%;
+        }
+
+        .kayitol-form1 form button {
+            width: 40%;
+            margin-top: 2%;
+            border: none;
+            height: calc(1.5em + 0.75rem + 2px);
+            border-radius: 5px;
+            background: transparent;
+            border: 1px solid #333;
+        }
+        .kayitol-form2 form input {
+            width: 280px;
+            margin-top: 2%;
+        }
+
+        .kayitol-form2 form button {
+            width: 40%;
+            margin-top: 2%;
+            border: none;
+            height: calc(1.5em + 0.75rem + 2px);
+            border-radius: 5px;
+            background: transparent;
+            border: 1px solid #333;
+        }
+    </style>
+    <div class="hero">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="hero-text">
+                        <h1>SPOR SALONUMUZA HOŞ GELDİNİZ...</h1>
+                        <p>
+                            Sağlıklı ve mutlu bir yaşam için spor salonumuza göz atabilirisiniz.
+                        </p>
+                        <div class="kayitol-form1">
+                            <form id="form1" name="form1" method="post" action="http://localhost/temp/kayitol.asp">
+                                <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+
+                                <input type="password" name="sifre" class="form-control" id="inputPassword3" placeholder="Password">
+                                <button class="u-btn u-button-style u-palette-2-base u-btn-2">
+                                    Kayıt Ol<br>
+                                </button>
+
+
+                            </form>
+
+                        </div>
+                        <div class="kayitol-form2">
+                            <form action="http://localhost/temp/girisyap.asp" method="post" name="login" id="#form2">
+
+                                <input class="form-control" name="UserName" type="text" id="UserName" placeholder="E-Mail" size="12" maxlength="50" />
+
+                                <input class="form-control" name="Password" type="password" id="Password" size="12" maxlength="50" />
+                                <button class="u-btn u-button-style u-palette-2-base u-btn-2">
+                                    Giriş Yap<br>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <div class="hero-image">
+                        <img src="img/anasayfa.png" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6">
+                    <div class="about-img">
+                        <img src="img/sağlık.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="section-header text-left">
+                        <h2>SAĞLIKLI YAŞAM VE SPOR</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Düzenli olarak spor yapmak sadece zinde ve formda bir vücut sağlamıyor. Bunun yanında çeşitli fiziksel ve ruhsal rahatsızlıklara da iyi geliyor. Ancak burada dikkat edilmesi gereken bir nokta, spora başlamadan önce mutlaka bir uzman kontrolünden geçmek. Bu şekilde uzmanlar kişiye bazı testler ve kontroller yaparak uygun bir spor programı belirleyebiliyor. Böylece olası sorunlar en baştan engelleniyor. Bilimsel araştırmalar, düzenli sporun sağlık açısından son derece olumlu etkilediğini gösteriyor. Bazı üniversitelerde yapılan çalışmalar, düzenli ve hafif tempoda sporun vücudumuzu güçlendirdiğini ve solunum yolu enfeksiyonlarına karşı direnci artırdığını göstermiş.Sağlıklı yaşamak temelde iki şarta bağlıdır. Bunlardan biri spordur diğeri ise temizliktir. Temizlik bireysel ve çevresel olarak ayrılır. Spor tamamen kişinin kendine bağlıdır. İnsan vücudu, demir gibidir. İşledikçe pas tutmaz.Spor yapmak, dokuları, organları ve sistemleri harekete geçirir. Dengede tutar. Sağlıklı çalışmasını sağlar. Hastalıkları önler. Ömrü uzatır. Enerji verir. Spor yapmak, insanın daha dinamik, dinç ve zinde olmasını sağlar.Sağlıklı yaşamak ve uzman görüşleri için lütfen bize danışın.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="class">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+
+                <h2>Spor Salonu Ders Programı</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul id="class-filter">
+                        <li data-filter="*" class="filter-active">Tüm Sınıflar</li>
+                        <li data-filter=".filter-1">Pilates Eğitimi</li>
+                        <li data-filter=".filter-2">Zumba Eğitimi </li>
+                        <li data-filter=".filter-3">Fitness Eğitimi </li>
+                        <li data-filter=".filter-4">Kick Boks Eğitimi </li>
+                        <li data-filter=".filter-5">Sağlıklı Yaşam Eğitimi </li>
+                        <li data-filter=".filter-6">Yoga Eğitimi </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row class-container">
+                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="class-wrap">
+                        <div class="class-img">
+                            <img src="img/pilates.jpg" alt="Image">
+                        </div>
+                        <div class="class-text">
+                            <div class="class-teacher">
+                                <img src="img/ebrusalli.jpg" alt="Image">
+                                <h3>Ebru Şallı</h3>
+                                <a href="">+</a>
+                            </div>
+                            <h2>Pilates Eğitimi</h2>
+                            <div class="class-meta">
+                                <p><i class="far fa-calendar-alt"></i>Pazartesi, Çarşamba, Cuma</p>
+                                <p><i class="far fa-clock"></i>10:00 - 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="class-wrap">
+                        <div class="class-img">
+                            <img src="img/zumbaa.jpg" alt="Image">
+                        </div>
+                        <div class="class-text">
+                            <div class="class-teacher">
+                                <img src="img/demet.jpg" alt="Image">
+                                <h3>Demet Özdemir</h3>
+                                <a href="">+</a>
+                            </div>
+                            <h2>Zumba Eğitmeni</h2>
+                            <div class="class-meta">
+                                <p><i class="far fa-calendar-alt"></i>Pazar, Salı, Cuma</p>
+                                <p><i class="far fa-clock"></i>09:00 - 10:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="class-wrap">
+                        <div class="class-img">
+                            <img src="img/fitness.jpg" alt="Image">
+                        </div>
+                        <div class="class-text">
+                            <div class="class-teacher">
+                                <img src="img/josh.jpg" alt="Image">
+                                <h3>Josh Duhamel</h3>
+                                <a href="">+</a>
+                            </div>
+                            <h2>Fitness Eğitmeni</h2>
+                            <div class="class-meta">
+                                <p><i class="far fa-calendar-alt"></i>Salı, Perşembe, Pazar</p>
+                                <p><i class="far fa-clock"></i>09:00 - 11:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="class-wrap">
+                        <div class="class-img">
+                            <img src="img/fitnessss.jpg" alt="Image">
+                        </div>
+                        <div class="class-text">
+                            <div class="class-teacher">
+                                <img src="img/özge.jpg" alt="Image">
+                                <h3>Özge Özpirinçci</h3>
+                                <a href="">+</a>
+                            </div>
+                            <h2>Fitness Eğitmeni</h2>
+                            <div class="class-meta">
+                                <p><i class="far fa-calendar-alt"></i>Pazar, Salı, Cuma</p>
+                                <p><i class="far fa-clock"></i>09:00 - 11:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="class-wrap">
+                        <div class="class-img">
+                            <img src="img/bokss.jpg" alt="Image">
+                        </div>
+                        <div class="class-text">
+                            <div class="class-teacher">
+                                <img src="img/david.jpg" alt="Image">
+                                <h3>David Beckham</h3>
+                                <a href="">+</a>
+                            </div>
+                            <h2>Kick Boks Eğitmeni</h2>
+                            <div class="class-meta">
+                                <p><i class="far fa-calendar-alt"></i>Pazartesi, Salı, Çarşamba</p>
+                                <p><i class="far fa-clock"></i>08:00 - 11:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-6 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="class-wrap">
+                        <div class="class-img">
+                            <img src="img/yoga.jpg" alt="Image">
+                        </div>
+                        <div class="class-text">
+                            <div class="class-teacher">
+                                <img src="img/rihanna.png" alt="Image">
+                                <h3>Robyn Rihanna Fent</h3>
+                                <a href="">+</a>
+                            </div>
+                            <h2>Yoga Eğitmeni</h2>
+                            <div class="class-meta">
+                                <p><i class="far fa-calendar-alt"></i>Cuma, Çarşamba, Pazartesi</p>
+                                <p><i class="far fa-clock"></i>07:00 - 09:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-5 wow fadeInUp" data-wow-delay="1s">
+                    <div class="class-wrap">
+                        <div class="class-img">
+                            <img src="img/sağlıklı.jpg" alt="Image">
+                        </div>
+                        <div class="class-text">
+                            <div class="class-teacher">
+                                <img src="img/sinem.jpg" alt="Image">
+                                <h3>Sinem Kobal</h3>
+                                <a href="">+</a>
+                            </div>
+                            <h2>Sağlıklı Yaşam Eğitmeni</h2>
+                            <div class="class-meta">
+                                <p><i class="far fa-calendar-alt"></i>Pazar, Perşembe, Cumartesi</p>
+                                <p><i class="far fa-clock"></i>11:00 - 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="price">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h2>Eğitimlerin Fiyatlandırma Planı</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="price-item">
+                        <div class="price-header">
+                            <div class="price-title">
+                                <h2>Temel</h2>
+                            </div>
+                            <div class="price-prices">
+                                <h2><small>$</small>40<span>/ mo</span></h2>
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+                                    <li>Kişisel Eğitmen</li>
+                                    <li>Normal Sınıf</li>
+                                    <li>Ücretsiz Kurs</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                                <a class="btn" href="">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-item featured-item">
+                        <div class="price-header">
+                            <div class="price-title">
+                                <h2>Standart</h2>
+                            </div>
+                            <div class="price-prices">
+                                <h2><small>$</small>88<span>/ mo</span></h2>
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+
+                                    <li>Özel Sınıf</li>
+                                    <li>Ücretsiz Kurs</li>
+                                    <li>Grup Eğitimi</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                                <a class="btn" href="">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="price-item">
+                        <div class="price-header">
+                            <div class="price-title">
+                                <h2>Özel</h2>
+                            </div>
+                            <div class="price-prices">
+                                <h2><small>$</small>112<span>/ mo</span></h2>
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+                                    <li>Kişisel Eğitmen</li>
+                                    <li>Özel Sınıf</li>
+                                    <li>Ücretsiz Kurs</li>
+                                    <li>Grup Eğitimi</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                                <a class="btn" href="">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h2>Geçmiş Spor Salonu Aktiviteleri</h2>
+            </div>
+            <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/zumba.jpg" alt="Zumba">
+                    </div>
+                    <div class="blog-text">
+                        <h2>DİKMENDE ZUMBA FITNESS</h2>
+                        <div class="blog-meta">
+                            <p><i class="far fa-calendar-alt"></i>03/Nisan/2019</p>
+                        </div>
+                        <p>
+                            Aerobik ve dans figürlerini içerisinde barındıran zumba çok yönlü haliyle kitleleri kendisine hayran bırakmış, kısa sürede dünya çapında ün kazanmıştır. Zumba kareografisinde, kumbiya, hip-hop, samba, merenge, salsa, mambo, savaş sanatları gibi birçok dans hareketlerini içerisinde bulundurur. Squat ve lunge egzersizlerinin de içerisinde yer alması nedeniyle çok iyide bir bacak inceltici spordur.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/boks.jpg" alt="Kick Boks">
+                    </div>
+                    <div class="blog-text">
+                        <h2>DİKMENDE KİCK BOKS ÇALIŞMALARI</h2>
+                        <div class="blog-meta">
+                            <p><i class="far fa-calendar-alt"></i>22/Mayıs/2018</p>
+                        </div>
+                        <p>
+                            Spor salonu aktiviteleri içerisinde Kick boks yaparak kendisini savunanların olduğu kadar, kilo verip form tutanların da varlığından söz etmekte mümkün. 6 aylık kick boks üyeliği ile gayet rahat bir şekilde temel teknikleri öğrenebilir. Kick boks çalışmaları üzerinde çığır aşmış kulüplerin yer aldığı dikmen, şampiyon sporcular yetiştiren kulüplerden oluşmaktadır. Kick boks antrenmanları çoğu kulüpte 1.5 saat kadar yapılmakta ve haftada 3 gün uygulanmaktadır
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/body.jpg" alt="Body Fitness">
+                    </div>
+                    <div class="blog-text">
+                        <h2>DİKMENDE BODY VE FİTNESS</h2>
+                        <div class="blog-meta">
+                            <p><i class="far fa-calendar-alt"></i>12/Aralık/2021</p>
+                        </div>
+                        <p>
+                            Body ve fitness çalışmalarının günün her saati istenildiği gibi uygulanabilme lüksü, insanların bu iki branşı yoğunlukla tercih etmesine neden oluyor. Her bedene ayrı ayrı düzenlenen egzersiz programları ile uygulanan bu iki sporda, antrenörün katkısı başarıya giden yolda en büyük destekçiniz olacaktır. Programlarla doğru orantıda gerçekleşmesi gereken beslenme listeleri, bu sporların olmazsa olmazıdır. Mutlak başarı için spor ile beslenmenin eksiksiz ve bir disiplin içerisinde olması gerekmektedir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo">GASS</a>
+                    <div class="footer-menu">
+                        <p>0850 245 5233</p>
+                        <p>gizemsporsalonu@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
